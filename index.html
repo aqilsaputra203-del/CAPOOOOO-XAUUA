@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capo XAU - Komunitas Trader XAU/USD Indonesia</title>
+    <meta name="description" content="Ingin trading emas lebih terarah dan percaya diri? Capo XAU hadir sebagai komunitas trader Indonesia dengan Edukasi terstruktur, Mentoring intensif, Signal VIP, dan rekomendasi Broker terpercaya." />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <img src="logo.jpg" alt="Capo XAU" class="loader-logo-img">
+            <div class="loader-bar">
+                <div class="loader-bar-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Background layers -->
+    <div class="bg-overlay"></div>
+    <div class="bg-image-layer"></div>
+    <div class="bg-aurora"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="menu-header">
+            <img src="logo.jpg" alt="Capo XAU" style="height: 32px; width: auto; border-radius: 6px;">
+            <button class="menu-close-btn" id="menu-close-btn" aria-label="Tutup menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="menu-nav">
+            <li><a href="#hero" class="menu-link"><i class="fa-solid fa-house"></i> Beranda</a></li>
+            <li><a href="#about" class="menu-link"><i class="fa-solid fa-circle-info"></i> Tentang Kami</a></li>
+            <li><a href="#services" class="menu-link"><i class="fa-solid fa-layer-group"></i> Layanan</a></li>
+            <li><a href="#brokers" class="menu-link"><i class="fa-solid fa-building-columns"></i> Broker Partner</a></li>
+            <li><a href="#community" class="menu-link"><i class="fa-solid fa-users"></i> Komunitas</a></li>
+        </ul>
+        <div class="menu-footer">
+            <a href="https://t.me/honkain" target="_blank" class="btn-primary">
+                <i class="fa-solid fa-crown" style="margin-right: 8px;"></i> Join VIP Gratis
+            </a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-inner">
+                <a href="#hero" class="header-logo-link">
+                    <img src="logo.jpg" alt="Capo XAU" class="header-logo-img">
+                    <span class="header-logo-text">CAPO XAU</span>
+                </a>
+                <button class="menu-btn" id="menu-btn" aria-label="Buka menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="profile-image-container anim-element" data-anim="zoom-in">
+                <img src="logo.jpg" alt="Capo XAU Logo" class="hero-logo">
+            </div>
+            <h1 class="main-title anim-element" data-anim="fade-up">Trading XAU/USD<br><span class="highlight-text">Lebih Terarah</span>.</h1>
+            <p class="description anim-element" data-anim="fade-up" data-delay="100">
+                Ingin trading emas lebih terarah dan percaya diri? Capo XAU hadir sebagai komunitas trader Indonesia dengan Edukasi terstruktur, Mentoring intensif, Signal VIP, dan rekomendasi Broker terpercaya — mendampingi kamu dari pemula hingga profesional.
+            </p>
+            <div class="hero-cta anim-element" data-anim="fade-up" data-delay="200">
+                <a href="https://t.me/CAPOXAU" target="_blank" class="btn-primary">
+                    <i class="fa-brands fa-telegram" style="margin-right: 8px;"></i> Join Signal Telegram
+                </a>
+                <a href="#brokers" class="btn-secondary">Daftar Broker Sekarang</a>
+            </div>
+        </section>
+
+        <!-- Stats Counter -->
+        <section class="stats-section" id="stats">
+            <div class="stats-grid">
+                <div class="stat-card glass-panel anim-element" data-anim="fade-up" data-delay="0">
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-label">Members</div>
+                </div>
+                <div class="stat-card glass-panel anim-element" data-anim="fade-up" data-delay="100">
+                    <div class="stat-number" data-target="85" data-suffix="%">0</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                <div class="stat-card glass-panel anim-element" data-anim="fade-up" data-delay="200">
+                    <div class="stat-number" data-target="3" data-suffix=" Thn">0</div>
+                    <div class="stat-label">Pengalaman</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami -->
+        <section class="about-section glass-panel anim-element" data-anim="fade-up" id="about">
+            <h2 class="section-title">Tentang Capo XAU</h2>
+            <p class="about-text">
+                Capo XAU adalah komunitas yang berdedikasi membantu para trader dari berbagai level pengalaman, mulai dari pemula hingga profesional. Bersama kami, kamu tidak hanya mendapatkan sinyal harian, tapi juga wadah untuk berkembang, berdiskusi, dan memahami market secara fundamental maupun teknikal.
+            </p>
+        </section>
+
+        <!-- Layanan Kami -->
+        <section class="services-section" id="services">
+            <h2 class="section-title anim-element" data-anim="fade-up">Layanan Kami</h2>
+            <div class="services-grid">
+                <div class="service-card glass-panel anim-element" data-anim="fade-left" data-delay="0">
+                    <div class="service-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Edukasi</h3>
+                    <p>Materi belajar trading dari dasar hingga lanjutan.</p>
+                </div>
+                <div class="service-card glass-panel anim-element" data-anim="fade-right" data-delay="100">
+                    <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Mentoring</h3>
+                    <p>Bimbingan langsung dari mentor berpengalaman.</p>
+                </div>
+                <div class="service-card glass-panel anim-element" data-anim="fade-left" data-delay="200">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Signal VIP</h3>
+                    <p>Sinyal trading harian, real-time dengan akurasi tinggi.</p>
+                </div>
+                <div class="service-card glass-panel anim-element" data-anim="fade-right" data-delay="300">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Broker Terpercaya</h3>
+                    <p>Rekomendasi broker resmi & teregulasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Broker Partner -->
+        <section id="brokers" class="broker-section">
+            <h2 class="section-title anim-element" data-anim="fade-up">Broker Partner</h2>
+            <div class="broker-list">
+                <!-- HFM -->
+                <div class="broker-card glass-panel anim-element" data-anim="fade-left">
+                    <div class="broker-info">
+                        <i class="fa-solid fa-building-columns broker-logo-icon"></i>
+                        <div class="broker-text">
+                            <h3>HFM</h3>
+                            <p>Broker Teregulasi Global</p>
+                        </div>
+                    </div>
+                    <a href="https://register.hfmtrade-ind.com/sv/id/new-live-account/?refid=30445404" target="_blank" class="btn-primary btn-broker">Buka Akun HFM</a>
+                </div>
+                
+                <!-- Valetax -->
+                <div class="broker-card glass-panel anim-element" data-anim="fade-right" data-delay="100">
+                    <div class="broker-info">
+                        <i class="fa-solid fa-chart-pie broker-logo-icon"></i>
+                        <div class="broker-text">
+                            <h3>Valetax</h3>
+                            <p>Broker Pilihan Terpercaya</p>
+                        </div>
+                    </div>
+                    <a href="https://ma.valetax-indonesia.com/guest/registration" target="_blank" class="btn-primary btn-broker">Buka Akun Valetax</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Komunitas / VIP -->
+        <section class="links-section" id="community">
+            <h2 class="section-title anim-element" data-anim="fade-up">Gabung Komunitas</h2>
+            
+            <a href="https://t.me/honkain" target="_blank" class="link-card highlight-card glass-panel anim-element" data-anim="fade-up" data-delay="0">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <div class="icon-spin-border"></div>
+                        <div class="icon-inner">
+                            <i class="fa-solid fa-crown text-highlight"></i>
+                        </div>
+                    </div>
+                    <div class="text-content">
+                        <h3>Join VIP Gratis</h3>
+                        <p>Hubungi admin untuk akses Signal VIP & Mentoring</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="https://t.me/CAPOXAU" target="_blank" class="link-card glass-panel anim-element" data-anim="fade-up" data-delay="100">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <div class="icon-spin-border"></div>
+                        <div class="icon-inner">
+                            <i class="fa-solid fa-bullhorn text-highlight"></i>
+                        </div>
+                    </div>
+                    <div class="text-content">
+                        <h3>Join Channel Signal</h3>
+                        <p>Signal Telegram 24/7 (Publik)</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="https://t.me/belajartradingforexid" target="_blank" class="link-card glass-panel anim-element" data-anim="fade-up" data-delay="200">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <div class="icon-spin-border"></div>
+                        <div class="icon-inner">
+                            <i class="fa-solid fa-comments text-highlight"></i>
+                        </div>
+                    </div>
+                    <div class="text-content">
+                        <h3>Gabung Diskusi Komunitas</h3>
+                        <p>Grup Diskusi Umum Terbuka</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right link-arrow"></i>
+                </div>
+            </a>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="disclaimer-section anim-element" data-anim="fade-up">
+            <p class="disclaimer-title">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                PERINGATAN RISIKO
+            </p>
+            <p class="disclaimer-text">
+                Trading forex dan emas memiliki risiko tinggi dan dapat mengakibatkan kerugian melebihi modal awal. Hasil trading di masa lalu tidak menjamin hasil di masa depan. Capo XAU menyediakan edukasi dan informasi, bukan jaminan profit atau nasihat keuangan resmi.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer anim-element" data-anim="fade-up">
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="Capo XAU" class="footer-logo-img">
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/CAPOXAU" target="_blank">Signal</a> •
+                <a href="https://t.me/belajartradingforexid" target="_blank">Diskusi</a> •
+                <a href="https://t.me/honkain" target="_blank">Admin</a>
+            </div>
+            <div class="footer-links">
+                <a href="https://register.hfmtrade-ind.com/sv/id/new-live-account/?refid=30445404" target="_blank">HFM</a> •
+                <a href="https://ma.valetax-indonesia.com/guest/registration" target="_blank">Valetax</a>
+            </div>
+            <p class="copyright">&copy; 2026 Capo XAU. All Rights Reserved.</p>
+        </footer>
+        
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
