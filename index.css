@@ -858,6 +858,23 @@ body {
     transform: scale(1.05);
 }
 
+.broker-logo-img {
+    width: 64px; height: 64px;
+    border-radius: 14px;
+    object-fit: contain;
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 6px;
+    flex-shrink: 0;
+    transition: all 0.3s var(--ease-smooth);
+}
+
+.broker-card:hover .broker-logo-img {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.15);
+    transform: scale(1.05);
+}
+
 .broker-text h3 {
     font-size: 1.05rem;
     color: var(--text-main);
