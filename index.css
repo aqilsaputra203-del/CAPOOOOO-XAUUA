@@ -548,6 +548,21 @@ body {
     animation: shimmer 3s linear infinite;
 }
 
+.highlight-gold {
+    background: linear-gradient(
+        90deg,
+        #fff7d6 0%,
+        #ffd700 25%,
+        var(--accent-gold) 50%,
+        #ffd700 75%,
+        #fff7d6 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
 @keyframes shimmer {
     0% { background-position: 0% center; }
     100% { background-position: 200% center; }
